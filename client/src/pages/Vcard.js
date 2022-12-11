@@ -4,7 +4,9 @@ import ReactToPrint from 'react-to-print';
 import { Card } from 'antd';
 
 
-
+const user = JSON.parse(localStorage.getItem("sheyresume-user")); 
+const url=`http://localhost:3000/${user.username}`
+console.log(url)
 
 const style = {
     margin:"auto",
@@ -38,6 +40,7 @@ const style = {
     return <p style={{color:"#626262",marginTop:"-15px ",fontSize:"12px",maxWidth:"200px"}}>{user.address}</p>
   }
   
+
   function BusinessCard(props) {
     return (
       <div style={props.style}>
@@ -45,13 +48,13 @@ const style = {
         <JobTitle title="Graphic Designer" />
         <Email email="egold@mail.com" />
         <Address Address="10578/38, Shanker Gali No 2, Kalyan, Maharashtra, Pin code 110055, India" />
-        <QRCode value={user.url} size={85}
+        <QRCode value={url} size={85}
     style={{ position:"relative",marginLeft:"77%",marginTop:"-50%" ,background:"white",padding:"2px",width:"90px",height:"90px"}}/>
       </div>
     )
   }
 
-const user = JSON.parse(localStorage.getItem("sheyresume-user")); 
+
 const { Meta } = Card;
 class ComponentToPrint extends React.Component {
     render() {
