@@ -14,6 +14,9 @@ function DefaultLayout(props) {
       <Menu.Item>
         <Link to="/profile">Profile</Link>
       </Menu.Item>
+      <Menu.Item>
+        <Link to="/Vcard" target="_blank">Print Card</Link>
+      </Menu.Item>
       <Menu.Item
         onClick={() => {
           localStorage.removeItem("sheyresume-user");

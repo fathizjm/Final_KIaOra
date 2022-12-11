@@ -14,6 +14,7 @@ import Qr from "./pages/Qr"
 import UserProfile from "./components/UserProfile";
 import User from "./components/User";
 import React, { useState } from "react";
+import Vcard from "./pages/Vcard";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/UserProfile" element={<UserProfile/>}/>
           <Route path="/:username" element={<User/>}/>
+          <Route path="/Vcard" element={<ProtectedRoute><Vcard /></ProtectedRoute>} />
         </Routes>
       </BrowserRouter>
     </div>
