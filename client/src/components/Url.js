@@ -1,12 +1,12 @@
 import React from "react";
 import { Form, Input } from "antd";
 
-function LinkedInInfo() {
+function Url() {
     return (
         <div>
           <Form.Item
-            name="linkedinlink"
-            label="LinkedIn Info"
+            name="url"
+            label="Url Link"
             rules={[{ required: true }]}
           >
             <Input />
@@ -15,4 +15,4 @@ function LinkedInInfo() {
    );
 }
 
-export default LinkedInInfo;
+export default Url

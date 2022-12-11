@@ -16,6 +16,8 @@ const userSchema = new mongoose.Schema(
     experience: { type: Array, default: [] },
     projects: { type: Array, default: [] },
     linkedinlink: { type: String, default: ""},
+    profession:{ type: String , default: ""},
+    url: { type: String, default: ""},
   },
   {
     timestamps: true,

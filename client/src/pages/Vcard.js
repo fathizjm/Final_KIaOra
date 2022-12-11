@@ -45,11 +45,8 @@ const style = {
         <JobTitle title="Graphic Designer" />
         <Email email="egold@mail.com" />
         <Address Address="10578/38, Shanker Gali No 2, Kalyan, Maharashtra, Pin code 110055, India" />
-        <QRCode value="https://www.geeksforgeeks.org/how-to-set-background-images-in-reactjs/" size={85}
-    style={{ position:"relative",marginLeft:"77%",marginTop:"-50%" ,background:"white",padding:"2px",width:"90px",height:"90px"}}
-   
- 
-    />
+        <QRCode value={user.url} size={85}
+    style={{ position:"relative",marginLeft:"77%",marginTop:"-50%" ,background:"white",padding:"2px",width:"90px",height:"90px"}}/>
       </div>
     )
   }

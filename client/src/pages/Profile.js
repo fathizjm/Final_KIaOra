@@ -7,6 +7,7 @@ import ExperienceProjects from "../components/ExperienceProjects";
 import Documents from "../components/Documents";
 import LinkedInProfile from "../components/LinkedInProfile";
 import GithubProfile from "../components/GithubProfile";
+import Url from "../components/Url";
 import axios from "axios";
 
 const { TabPane } = Tabs;
@@ -53,6 +54,9 @@ export default function Profile() {
             </TabPane>
             <TabPane tab="Upload Github" key="6">
               <GithubProfile />
+            </TabPane>
+            <TabPane tab="Profile URL" key="7">
+              <Url />
             </TabPane>
           
           </Tabs>
