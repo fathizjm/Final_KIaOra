@@ -9,8 +9,6 @@ import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import Templates from "./pages/templates";
 import Templates_public from "./pages/templates_public";
-import Temp from "./pages/Temp"
-import Qr from "./pages/Qr"
 import UserProfile from "./components/UserProfile";
 import User from "./components/User";
 import React, { useState } from "react";
@@ -23,8 +21,6 @@ function App() {
         <Routes>
           <Route path="/" element={<ProtectedRoute><Home /></ProtectedRoute>} />
           <Route path="/home" element={<ProtectedRoute><Home /></ProtectedRoute>} />
-          <Route path="/temp" element={<Temp />} />
-          <Route path="/qr" element={<Qr />} />
           <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
           <Route path="/templates/:id" element={<ProtectedRoute><Templates /></ProtectedRoute>} />
           <Route path="/templates_public/:id" element={<Templates_public />} />
