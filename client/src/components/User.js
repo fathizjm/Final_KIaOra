@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import {Route, Link, Routes, useParams} from 'react-router-dom';
 import UserProfile from "./UserProfile";
 import axios from "axios";
-import { Form, Input, Button, Checkbox, message, Spin } from "antd";
+import { Form, Input, Button,Space, Checkbox, message, Spin } from "antd";
 import {  useNavigate } from "react-router-dom";
+import "./../resources/user.css";
 var qs = require('qs');
 
 
@@ -44,13 +45,12 @@ export default function App() {
     
   return (
     <div>
-      <div>
+      <div className="layoutt">
        
         <div className="parent">
       {loading && <Spin size="large"/>}
         <Form layout="vertical" onFinish={onFinish} >
-        <h1>{nm}</h1>
-        <hr />
+        <h1 style={{color:"#888888",fontSize:"20px",fontFamily:"Roboto"}}>{nm}'s Profile</h1>
         {/* <Form.Item name="username" label="Username" >
           <Input initialvalue={nm}/>
         </Form.Item> */}
@@ -58,10 +58,8 @@ export default function App() {
           <Input type="password" />
         </Form.Item> */}
 
-        <div className="d-flex align-items-center justify-content-between">
-          <Button type="primary" htmlType="submit">
-            Welcome
-          </Button>
+        <div className="d-flex align-items-center justify-content-between ">
+          <Button type="primary" htmlType="submit" style={{margin:"auto" ,marginTop:"26%" ,padding:"5px 60px 35px 60px" ,borderRadius:"5px",fontSize:"20px",fontFamily:"Roboto" ,letterSpacing:"5px"}}>Enter</Button>
         </div>
       </Form>
       </div>
