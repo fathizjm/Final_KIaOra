@@ -5,7 +5,7 @@ function GithubInfo() {
     return (
         <div>
           <Form.Item
-            name="Githublink"
+            name="githublink"
             label="Github Info"
             rules={[{ required: true }]}
           >

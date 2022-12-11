@@ -3,7 +3,7 @@
     height: 100vh;
     padding: 20px 50px;
     /* background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%); */
-    background-image: url("C:\Users\Welcome\Desktop\Final_KIaOra\client\public\backg.png");
+    background-image: url("backg.png");
     overflow:hidden;
     background-repeat:no-repeat;
     background-size: cover;
@@ -24,7 +24,7 @@
         height: 100vh;
         padding: 20px 50px;
         /* background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%); */
-        background-image: url("C:\Users\Welcome\Desktop\Final_KIaOra\client\public\backgg.png");
+        background-image: url("backgg.png");
         overflow:hidden;
         background-repeat:no-repeat;
         background-size: 100%;

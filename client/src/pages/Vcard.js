@@ -6,6 +6,7 @@ import { Card } from 'antd';
 
 const user = JSON.parse(localStorage.getItem("sheyresume-user")); 
 const url=`http://localhost:3000/${user.username}`
+
 console.log(url)
 
 const style = {
@@ -26,9 +27,7 @@ const style = {
   }
   
   function JobTitle(props) {
-    return <h6 style={{color:'#D9D9D9',paddingBottom:"75px",marginTop:"-10px ",fontFamily: 'sans-serif',}}>{user.skills.map((skill) => {
-      return <p>{skill.technology}</p>;
-    })}</h6>
+      return <h6 style={{color:'#D9D9D9',paddingBottom:"75px",marginTop:"-10px ",fontFamily: 'sans-serif',}}>{user.profession}</h6>
   }
   
   

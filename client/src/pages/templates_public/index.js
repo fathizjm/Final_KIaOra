@@ -1,13 +1,13 @@
 import React, { useRef } from "react";
 import { useReactToPrint } from "react-to-print";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
-import Documentsupload from "../../components/Documentsupload";
-import LinkedinUpload from "../../components/LinkedinUpload";
-import Github from "../../components/Github";
+import Documentsupload_public from "../../components/Documentsupload_public";
+import LinkedinUpload_public from "../../components/LinkedinUpload_public";
+import Github_public from "../../components/Github_public";
 import Template1 from "./Template1";
 import Template2 from "./Template2";
 import { Button , Tabs} from "antd";
-import SocialUpload from "../../components/SocialUpload";
+import SocialUpload_public from "../../components/SocialUpload_public";
 
 function Templates() {
   const componentRef = useRef();
@@ -36,18 +36,18 @@ function Templates() {
       <div ref={componentRef}>{gettemplate()}</div>
     </Tabs.TabPane>
     <Tabs.TabPane tab="Documents" key="2">
-    <Documentsupload />
+    <Documentsupload_public />
     </Tabs.TabPane>
     <Tabs.TabPane tab="LinkedIn" key="3">
-    <LinkedinUpload />
+    <LinkedinUpload_public />
     </Tabs.TabPane>
 
     <Tabs.TabPane tab="Github" key="4">
-    <Github />
+    <Github_public />
     </Tabs.TabPane>
    
     <Tabs.TabPane tab="Social" key="5">
-    <SocialUpload />
+    <SocialUpload_public />
     </Tabs.TabPane>
     
     

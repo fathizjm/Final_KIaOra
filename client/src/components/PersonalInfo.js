@@ -48,7 +48,15 @@ function PersonalInfo() {
             <Input />
           </Form.Item>
         </div>
-
+        <div className="col-md-4">
+          <Form.Item
+            name="profession"
+            label="Profession"
+            rules={[{ required: true }]}
+          >
+            <Input />
+          </Form.Item>
+        </div>
         <div className="col-md-12">
           <Form.Item
             name="carrierObjective"
