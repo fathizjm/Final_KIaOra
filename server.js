@@ -8,7 +8,6 @@ const path = require("path");
 const Users = require("./models/userModel");
 app.use("/api/user", userRoute);
 
-// const {MONGOURI}= require('./config/keys')
 if (process.env.NODE_ENV === "production") {
   
  

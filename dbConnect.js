@@ -1,8 +1,9 @@
 const mongoose = require('mongoose')
 
+const {MONGOURI}= require('./config/keys')
 const URL = 'mongodb+srv://SahilN:$ahil0272@cluster0.qcuyzci.mongodb.net/test'
 
-mongoose.connect(URL , {useUnifiedTopology:true , useNewUrlParser:true})
+mongoose.connect(MONGOURI , {useUnifiedTopology:true , useNewUrlParser:true})
 
 const connection = mongoose.connection
 
